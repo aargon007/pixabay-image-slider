@@ -19,7 +19,7 @@ const showImages = (images) => {
   gallery.classList.add("d-flex", "align-items-stretch");
   images.forEach((image) => {
     let div = document.createElement("div");
-    div.className = "col-lg-3 col-md-6 col img-item mb-4";
+    div.className = "col-lg-3 col-md-6 col-12 img-item mb-4";
     div.innerHTML = ` 
     <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}" style="height:350px;width:350px">
     <br>

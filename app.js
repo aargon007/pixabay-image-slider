@@ -21,7 +21,7 @@ const showImages = (images) => {
     let div = document.createElement("div");
     div.className = "col-lg-3 col-md-6 col-12 img-item mb-4";
     div.innerHTML = ` 
-    <img class="img-fluid img-thumbnail" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}" style="height:350px;width:350px">
+    <img class="img-fluid img-thumbnail mx-auto w-100" onclick=selectItem(event,"${image.webformatURL}") src="${image.webformatURL}" alt="${image.tags}" style="height:350px;">
     <br>
     <a href="${image.largeImageURL}" class="text-center d-block rounded-2 p-2 bg-secondary text-white mt-1 text-decoration-none" download>Download <i class="fa-solid fa-download "></i></a>
     `;
